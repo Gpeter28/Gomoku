@@ -67,17 +67,17 @@ namespace Gomoku
             PicBox_Board.Controls.Add(newChess);
             if (newChess.ChessColor == ChessColor.BLACK)
             {
-                chessArray[offsetPoint.X / 54, offsetPoint.Y / 54] = 1;
-                Console.WriteLine($"{offsetPoint.X / 54}, {offsetPoint.Y / 54}, black");
+                chessArray[offsetPoint.X / chessOffset, offsetPoint.Y / chessOffset] = 1;
+                Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, black");
             }
             else
             {
-                chessArray[offsetPoint.X / 54, offsetPoint.Y / 54] = -1;
-                Console.WriteLine($"{offsetPoint.X / 54}, {offsetPoint.Y / 54}, white");
+                chessArray[offsetPoint.X / chessOffset, offsetPoint.Y / chessOffset] = -1;
+                Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, white");
             }
 
             UpdateLabel();
-            var flag = CheckWin(color, offsetPoint.X / 54, offsetPoint.Y / 54);
+            var flag = CheckWin(color, offsetPoint.X / chessOffset, offsetPoint.Y / chessOffset);
             if (flag)
             {
                 MessageBox.Show($"Win");
