@@ -5,4 +5,4 @@ daily practise program with gomoku
 Chess Board and Chess are download from web.
 
 
-![picture](./Gomoku./Img/Show.png)
+![picture](./Gomoku./Img/show.png)
