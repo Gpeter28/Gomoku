@@ -68,12 +68,12 @@ namespace Gomoku
             if (newChess.ChessColor == ChessColor.BLACK)
             {
                 chessArray[offsetPoint.X / chessOffset, offsetPoint.Y / chessOffset] = 1;
-                Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, black");
+                // Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, black");
             }
             else
             {
                 chessArray[offsetPoint.X / chessOffset, offsetPoint.Y / chessOffset] = -1;
-                Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, white");
+                // Console.WriteLine($"{offsetPoint.X / chessOffset}, {offsetPoint.Y / chessOffset}, white");
             }
 
             UpdateLabel();
@@ -186,7 +186,7 @@ namespace Gomoku
                 }
             }
 
-            Console.WriteLine(times);
+            // Console.WriteLine(times);
             return times == 3 ? true : false;
         }
 
